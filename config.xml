@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tecnoteca.arpav.nevevalanghe" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ARPAV Neve e Valanghe</name>
+    <description>
+        L’applicazione permette di conoscere il pericolo di valanghe e lo stato del manto nevoso per 5 zone 
+        climaticamente omogenee del territorio montano regionale. Una volta selezionata la zona di
+        interesse l’applicazione fornisce informazioni di dettaglio che riguardano il grado di pericolo, la
+        localizzazione dei luoghi pericolosi, la tipologia di valanghe previste, la quantità di neve fresca
+        prevista e alcuni dati delle stazioni nivometeo (altezza neve e temperatura dell’aria) che ricadono
+        nella zona stessa.
+    </description>
+    <author email="tecnoteca@tecnoteca.com" href="http://www.tecnoteca.com">
+        Tecnoteca srl
+    </author>
+    <feature name="http://api.phonegap.com/1.0/device" />
+    
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    
+    <icon src="resources/icons/icon.png" />
+    <icon src="resources/icons/icon57x57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="resources/icons/icon72x72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="resources/icons/icon114x114.png" gap:platform="ios" width="114" height="114" />
+    <icon src="resources/icons/icon144x144.png" gap:platform="ios" width="144" height="144" />
+    
+    
+    <icon gap:platform="winphone" src="resources/icons/icon57x57.png" />
+    <icon gap:platform="winphone" gap:role="background" src="resources/icons/icon144x144.png" />
+    
+	
+	<!-- Do not auto hide splash on iOS -->
+	<preference name="AutoHideSplashScreen" value="false" />
+	<!-- Do not auto hide splash on Android -->
+	<preference name="SplashScreenDelay" value="10000"/>
+
+	<plugin name="cordova-plugin-splashscreen" spec="2.1.0" source="pgb" />
+	
+    <gap:splash src="resources/startup/splash.png"  />
+    <gap:splash src="resources/startup/splash.png" gap:platform="android" />
+    <gap:splash gap:platform="ios" src="resources/startup/splash320x480.png" width="320" height="480" />
+    <gap:splash gap:platform="ios" src="resources/startup/splash640x960.png" width="640" height="960" />
+    <gap:splash gap:platform="ios" src="resources/startup/splash768x1024.png" width="768" height="1024" />
+    <gap:splash gap:platform="ios" src="resources/startup/splash1024x768.png" width="1024" height="768" />
+    <gap:splash gap:platform="winphone" src="resources/startup/splash.jpg" />
+    
+    <plugin name="cordova-plugin-device" spec="1.0.1" source="pgb" />
+	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
+	<plugin name="cordova-plugin-network-information" spec="1.0.1" source="pgb" />
+    <plugin name="cordova-plugin-whitelist" />
+    
+    <access origin="*" />
+    <allow-navigation href="http://*/*" />
+</widget>
